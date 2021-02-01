@@ -1,18 +1,16 @@
-const numberOfFilms = +prompt('Сколько вы посмотрели фильмов?', ''),
-a = prompt('Один из последних просмотренных фильмов?', ''),
-b = prompt('Насколько оцените фильм', ''),
-c = prompt('Насколько оцените качество фильма', '');
+const numberOfFilms = +prompt('Сколько вы посмотрели фильмов?', '');
+
 
 
 const personalMovieDB = {
     count: numberOfFilms,
-    movies: [],
-    quality: []
+    movies: {},
 };
 
-
-
+for (let i = 0; i < 2; i++) {
+    const a = prompt('Один из последних просмотренных фильмов?', ''),
+b = prompt('Насколько оцените фильм', '');
 personalMovieDB.movies[a] = b;
-personalMovieDB.quality[a] = c;
+};
 
 console.log(personalMovieDB);

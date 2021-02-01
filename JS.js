@@ -1,17 +1,12 @@
 "use strict";
 
-//const result = confirm("Are you here?");
-//console.log(result);
+const num = 50;
+if (num < 49) {
+    console.log("Error");
+} else if (num > 100) {
+    console.log("Not true");
+} else {
+    console.log("Yes");
+}
 
-//const answer = prompt("Сколько тебе лет", "");
-//console.log(typeof(answer));
-
-//const answers = [];
-//answers[0] = prompt('Как у вас дела?');
-//answers[1] = prompt('Как ваше имя?');
-//answers[2] = prompt('Сколько вам лет?');
-//document.write(answers);
-
-const user = "Serik";
-
-alert(`Hi, ${user}`);
+(num == 50) ? console.log("Yeah") : console.log("Ohh no");
