@@ -1,8 +1,9 @@
-const numberOfFilms = +prompt('Сколько вы посмотрели фильмов?', ''),
-a = prompt('Один из последних просмотренных фильмов?', ''),
-b = prompt('Насколько оцените фильм', ''),
-c = prompt('Насколько оцените качество фильма', '');
-
-switch (str.numberOfFilms) {
-    
+"use strict";
+let numberOfFilms;
+function start() {
+    numberOfFilms = +prompt('How many films did you watch?');
+    while (numberOfFilms == '' || numberOfFilms == null || isNaN(numberOfFilms)) {
+        numberOfFilms = +prompt('How many films did you watch?');
+    }
 }
+start();
